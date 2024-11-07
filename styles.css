@@ -1,0 +1,100 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #388e3c;
+    background: #a5d6a7;
+    padding: 15px;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #a5d6a7;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language-toggle {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    background: #c8e6c9;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.lang-btn img {
+    margin-right: 5px;
+}
+
+.lang-btn.active {
+    background: #66bb6a;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.route {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #388e3c;
+    font-size: 1.5em;
+}
+
+.bus-timings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timing-card {
+    background: #f1f8e9;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 1.1em;
+    color: #1b5e20;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .bus-timings {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+}
